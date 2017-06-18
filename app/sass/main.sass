@@ -54,6 +54,7 @@ nav
 			color: #fff
 			font-family: "OpenSansSemiBold"
 			font-size: 63px
+			text-shadow: 0 1px 0 rgba(0, 0, 0, 0.16)
 		p
 			margin: 40px 0
 			color: #fff
@@ -71,6 +72,58 @@ nav
 			span
 				padding: 12px 0
 				display: block
+
+.team
+	h2
+		margin: 100px 0
+		font-size: 42px
+		text-align: center
+	ul.item-team
+		width: 100%
+		display: inline-block
+		padding: 0
+		margin-bottom: 90px;
+		li
+			width: 23%
+			float: left
+			margin: 0 10px
+			list-style: none
+			.item-photo
+				width: 201px
+				height: 201px
+				border-radius: 50%
+				background: #eeeef0
+				display: block
+				margin: 0 auto
+				position: relative
+				span
+					text-align: center
+					display: block
+					width: 201px
+					height: 201px
+					color: #f46d6d
+					font-size: 85px
+					font-family: "OpenSansExtraBold"
+					position: absolute
+					top: calc(25% - 10px)
+					border-radius: 50%
+					opacity: 0
+					cursor: pointer
+					transition: .5s
+					&:hover
+						opacity: 1
+			.item-name
+				text-align: center
+				h3
+					font-size: 22px
+					margin: 70px 0 0
+				span
+					font-size: 14px
+			.item-about
+				text-align: center
+				font-size: 14px
+				margin: 10px 0
+				display: inline-block
 
 
 @import "media" // Всегда в конце
