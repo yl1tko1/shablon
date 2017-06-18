@@ -1,0 +1,413 @@
+@font-face {
+  font-family: "OpenSansRegular";
+  src: url("../fonts/Open Sans/OpenSans-Regular.ttf"); }
+
+@font-face {
+  font-family: "OpenSansSemiBold";
+  src: url("../fonts/Open Sans/OpenSans-SemiBold.ttf"); }
+
+@font-face {
+  font-family: "OpenSansExtraBold";
+  src: url("../fonts/Open Sans/OpenSans-ExtraBold.ttf"); }
+
+@font-face {
+  font-family: "Lobster";
+  src: url("../fonts/Lobster/Lobster-Regular.ttf"); }
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "OpenSansRegular";
+  color: #4e525d; }
+
+a {
+  text-decoration: none;
+  color: #4e525d; }
+
+.wrapper {
+  width: 1170px;
+  margin: 0 auto; }
+
+.item-menu-mobile {
+  display: none; }
+
+nav .item-logo {
+  display: block;
+  margin: 30px 0;
+  float: left; }
+  nav .item-logo span {
+    font-family: "Lobster";
+    color: #44c0c2;
+    font-size: 43px; }
+
+nav .item-menu {
+  display: block;
+  float: right; }
+  nav .item-menu li {
+    list-style: none;
+    float: left; }
+    nav .item-menu li a {
+      padding: 45px 20px;
+      display: block;
+      font-size: 15px;
+      border-bottom: 3px solid #FFF;
+      -webkit-transition: .5s;
+      transition: .5s; }
+      nav .item-menu li a:hover, nav .item-menu li a:focus, nav .item-menu li a:active {
+        background: #f8f9fb;
+        color: #49cbcd;
+        border-bottom: 3px solid #49cbcd; }
+
+nav.fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #fff;
+  z-index: 5; }
+
+.header-block {
+  display: inline-block;
+  width: 100%; }
+  .header-block .banner-content {
+    position: absolute;
+    top: 0;
+    width: 100%; }
+    .header-block .banner-content h1 {
+      margin: 142px 0 0;
+      text-align: center;
+      color: #fff;
+      font-family: "OpenSansSemiBold";
+      font-size: 63px;
+      text-shadow: 0 1px 0 rgba(0, 0, 0, 0.16); }
+    .header-block .banner-content p {
+      margin: 40px 0;
+      color: #fff;
+      font-size: 23px; }
+    .header-block .banner-content a {
+      width: 225px;
+      border: 3px solid #FFF;
+      -webkit-border-radius: 10px;
+              border-radius: 10px;
+      font-size: 26px;
+      font-family: "OpenSansSemiBold";
+      color: #FFF;
+      display: block;
+      margin: 0 auto;
+      height: 63px; }
+      .header-block .banner-content a span {
+        padding: 12px 0;
+        display: block; }
+
+.team h2 {
+  margin: 100px 0;
+  font-size: 42px;
+  text-align: center; }
+
+.team ul.item-team {
+  width: 100%;
+  display: inline-block;
+  padding: 0;
+  margin-bottom: 90px; }
+  .team ul.item-team li {
+    width: 23%;
+    float: left;
+    margin: 0 10px;
+    list-style: none; }
+    .team ul.item-team li .item-photo {
+      width: 201px;
+      height: 201px;
+      -webkit-border-radius: 50%;
+              border-radius: 50%;
+      background: #eeeef0;
+      display: block;
+      margin: 0 auto;
+      position: relative; }
+      .team ul.item-team li .item-photo span {
+        text-align: center;
+        display: block;
+        width: 201px;
+        height: 201px;
+        color: #f46d6d;
+        font-size: 85px;
+        font-family: "OpenSansExtraBold";
+        position: absolute;
+        top: 20%;
+        -webkit-border-radius: 50%;
+                border-radius: 50%;
+        opacity: 0;
+        cursor: pointer;
+        -webkit-transition: .5s;
+        transition: .5s; }
+        .team ul.item-team li .item-photo span:hover {
+          opacity: 1; }
+    .team ul.item-team li .item-name {
+      text-align: center; }
+      .team ul.item-team li .item-name h3 {
+        font-size: 22px;
+        margin: 70px 0 0; }
+      .team ul.item-team li .item-name span {
+        font-size: 14px; }
+    .team ul.item-team li .item-about {
+      text-align: center;
+      font-size: 14px;
+      margin: 10px 0;
+      display: inline-block; }
+
+.package {
+  background: #f1f1f1;
+  padding: 120px 0; }
+
+.container-package {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%; }
+
+.wrap-pk {
+  width: 368px;
+  background: #f8f9fb;
+  display: table; }
+
+.title-pk {
+  width: 100%;
+  background: #485460;
+  text-align: center;
+  padding: 25px 0; }
+  .title-pk span {
+    font-size: 26px;
+    color: #fff; }
+
+.price {
+  text-align: center;
+  font-size: 20px;
+  padding: 25px 0; }
+
+.list {
+  width: 100%;
+  display: inline-block; }
+  .list .list-nm {
+    text-align: center;
+    font-size: 14px;
+    padding: 15px 0;
+    background: #FFF;
+    margin-bottom: 1px; }
+
+.ord-btn {
+  width: 170px;
+  height: 40px;
+  background: #788492;
+  display: block;
+  margin: 30px auto;
+  -webkit-border-radius: 5px;
+          border-radius: 5px;
+  font-family: "OpenSansSemiBold"; }
+  .ord-btn span {
+    display: table;
+    margin: 0 auto;
+    padding: 9px 0;
+    color: #FFF;
+    font-size: 17px; }
+
+.contacts {
+  background: url(../img/contact.jpg) center no-repeat;
+  background-size: cover;
+  min-height: 685px;
+  display: inline-block;
+  width: 100%;
+  padding-bottom: 90px; }
+  .contacts h2 {
+    margin: 100px 0;
+    text-align: center;
+    font-size: 42px;
+    color: #fff;
+    font-family: "OpenSansRegular"; }
+  .contacts .contacts-area {
+    width: 50%;
+    float: left;
+    color: #FFF; }
+    .contacts .contacts-area .title-contact {
+      font-size: 24px;
+      margin: 0; }
+    .contacts .contacts-area .item-desc {
+      font-size: 14px;
+      opacity: 0.5;
+      margin: 5px 0; }
+    .contacts .contacts-area .social {
+      display: inline-block;
+      margin: 40px 0 20px 0; }
+      .contacts .contacts-area .social .social-icon {
+        width: 42px;
+        height: 42px;
+        float: left;
+        margin-right: 15px; }
+    .contacts .contacts-area .item-contact {
+      font-size: 14px;
+      margin: 5px 0;
+      color: #bface2; }
+  .contacts .form-area {
+    width: 50%;
+    float: left;
+    font-family: "OpenSansRegular"; }
+    .contacts .form-area .form-contact {
+      display: inline-block;
+      width: 100%; }
+      .contacts .form-area .form-contact input[type="text"], .contacts .form-area .form-contact input[type="email"] {
+        width: 230px;
+        float: left;
+        margin: 10px 10px;
+        padding: 15px;
+        -webkit-border-radius: 5px;
+                border-radius: 5px;
+        border: 0;
+        font-size: 16px; }
+    .contacts .form-area textarea {
+      width: 510px;
+      margin: 10px 10px;
+      padding: 15px;
+      -webkit-border-radius: 5px;
+              border-radius: 5px;
+      border: 0;
+      font-size: 16px; }
+    .contacts .form-area input[type="submit"] {
+      font-size: 22px;
+      background: #49cbcd;
+      float: right;
+      width: 170px;
+      color: #FFF;
+      -webkit-border-radius: 5px;
+              border-radius: 5px;
+      border: 0;
+      padding: 15px 0;
+      margin: 10px 35px;
+      cursor: pointer;
+      -webkit-transition: .5s;
+      transition: .5s; }
+      .contacts .form-area input[type="submit"]:hover {
+        opacity: 0.8; }
+
+/*==========  Desktop First  ==========*/
+/* Large Devices, Wide Screens */
+@media only screen and (max-width: 1200px) {
+  /**/ }
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width: 992px) {
+  /**/
+  .wrapper {
+    width: 90%; }
+  .btn_mnu {
+    display: block; }
+  .team ul.item-team li {
+    width: 24%;
+    float: left;
+    margin: 0 auto;
+    list-style: none; }
+  .wrap-pk {
+    width: 285px; }
+  .ord-btn span {
+    padding: 6px 0; }
+  .contacts .form-area .form-contact input[type="text"], .contacts .form-area .form-contact input[type="email"] {
+    width: 180px;
+    margin: 10px;
+    padding: 11px; }
+  .contacts .form-area textarea {
+    width: 396px; } }
+
+/* Small Devices, Tablets */
+@media only screen and (max-width: 768px) {
+  /**/
+  .wrapper {
+    width: 90%; }
+  nav .item-menu {
+    display: none; }
+  nav .item-menu-mobile.activemenu {
+    display: inline-block;
+    width: 100%;
+    background: #f7f7f7; }
+    nav .item-menu-mobile.activemenu li {
+      list-style: none;
+      width: 99%;
+      text-align: center;
+      padding: 10px 0;
+      background: #FFF;
+      margin: 2px auto; }
+  .team ul.item-team li {
+    width: 100%;
+    margin-bottom: 20px; }
+  .container-package {
+    display: table; }
+  .wrap-pk {
+    width: 100%; }
+  .contacts .contacts-area {
+    width: 100%;
+    float: none; }
+  .contacts .form-area {
+    width: 100%;
+    float: none; }
+    .contacts .form-area .form-contact input[type="text"], .contacts .form-area .form-contact input[type="email"] {
+      width: 94%; }
+    .contacts .form-area textarea {
+      width: 93%; } }
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 480px) {
+  /**/
+  .header-block .banner-content h1 {
+    font-size: 35px;
+    margin: 80px 0 0; }
+  #prev-btn, #next-btn {
+    z-index: 5s;
+    width: 25px;
+    height: 25px;
+    background-size: 100%; }
+  .contacts .contacts-area {
+    width: 100%;
+    float: none; }
+  .contacts .form-area {
+    width: 100%;
+    float: none; }
+    .contacts .form-area .form-contact input[type="text"], .contacts .form-area .form-contact input[type="email"] {
+      width: 88%; }
+    .contacts .form-area textarea {
+      width: 85%; } }
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width: 320px) {
+  /**/
+  .contacts .contacts-area {
+    width: 100%;
+    float: none; }
+  .contacts .form-area {
+    width: 100%;
+    float: none; }
+    .contacts .form-area .form-contact input[type="text"], .contacts .form-area .form-contact input[type="email"] {
+      width: 85%; }
+    .contacts .form-area textarea {
+      width: 82%; } }
+
+/*==========  Mobile First  ==========*/
+/* Custom, iPhone Retina */
+@media only screen and (min-width: 320px) {
+  /**/ }
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width: 480px) {
+  /**/ }
+
+/* Small Devices, Tablets */
+@media only screen and (min-width: 768px) {
+  /**/ }
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width: 992px) {
+  /**/ }
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width: 1200px) {
+  /**/ }

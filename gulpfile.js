@@ -88,6 +88,9 @@ gulp.task('build', ['clean', 'img', 'sass', 'scripts'], function(){
 	var buildjs = gulp.src('app/js/**/*')
 		.pipe(gulp.dest('dist/js'));
 
+	var buildjs = gulp.src('app/img/**/*')
+		.pipe(gulp.dest('dist/img/'));
+
 	var buildhtml = gulp.src('app/**/*.php')
 		.pipe(gulp.dest('dist/'));
 
