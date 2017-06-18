@@ -1,3 +1,49 @@
 @import "fonts"
+$color-1: #44c0c2
+$text: #4e525d
+$button: #788492
+
+body
+	margin: 0
+	padding: 0
+	font-family: "OpenSansRegular"
+	color: $text
+a
+	text-decoration: none
+	color: $text
+
+.wrapper
+	width: 1170px
+	margin: 0 auto
+nav
+	display: fixed
+	.item-logo
+		display: block
+		margin: 30px 0
+		float: left
+		span
+			font-family: "Lobster"
+			color: $color-1
+			font-size: 43px
+	.item-menu
+		display: block
+		float: right
+		li
+			list-style: none
+			float: left
+			a
+				padding: 45px 20px
+				display: block
+				font-size: 15px
+				border-bottom: 3px solid #FFF
+				transition: .5s
+				&:hover, &:focus, &:active
+					background: #f8f9fb
+					color: #49cbcd
+					border-bottom: 3px solid #49cbcd
+.header-block
+	display: inline-block
+	width: 100%
+
 
 @import "media" // Всегда в конце
