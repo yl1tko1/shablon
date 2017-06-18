@@ -3,14 +3,20 @@ $(document).ready(function(){
 
 $(".btn_mnu").click(function() {
 $(this).toggleClass("active");
+$('.item-menu-mobile').toggleClass('activemenu');
+});
+
+$('.item-menu-mobile li a').on('click', function(){
+    $('.item-menu-mobile').removeClass('activemenu');
+    $('.btn_mnu').removeClass('active');
 });
 
 var $menu = $("nav");
 
 $(window).scroll(function(){
-    if ( $(this).scrollTop() > 0){
+    if ( $(this).scrollTop() > 150){
        $menu.addClass("fixed");
-   } else if($(this).scrollTop() <= 0) {
+   } else if($(this).scrollTop() <= 150) {
     $menu.removeClass("fixed");
 }
         });//scroll
