@@ -35,12 +35,12 @@
 					<span>Author</span>
 				</div>
 				<div class="item-menu">
-					<li><a href="">Home</a></li>
-					<li><a href="">Service</a></li>
-					<li><a href="">Portfolio</a></li>
-					<li><a href="">Team</a></li>
-					<li><a href="">Blog</a></li>
-					<li><a href="">Contact</a></li>
+					<li><a href="#home">Home</a></li>
+					<li><a href="#service">Service</a></li>
+					<li><a href="#portfolio">Portfolio</a></li>
+					<li><a href="#team">Team</a></li>
+					<li><a href="#blog">Blog</a></li>
+					<li><a href="#contact">Contact</a></li>
 				</div>
 			</div>
 		</nav>
@@ -70,7 +70,7 @@
 	</header>
 
 	<main>
-		<div class="team">
+		<div class="team" id="team">
 			<div class="wrapper">
 				<h2>The Team</h2>
 				<ul class="item-team">
@@ -126,7 +126,7 @@
 			</div>
 		</div>
 
-		<div class="package">
+		<div class="package" id="service">
 			<div class="wrapper">
 				<div class="container-package">
 
@@ -181,7 +181,7 @@
 			</div>
 		</div>
 
-		<div class="contacts">
+		<div class="contacts" id="contact">
 			<div class="wrapper">
 				<h2>Contact Us</h2>
 
@@ -200,8 +200,8 @@
 				<div class="form-area">
 					<form action="">
 					<div class="form-contact">
-						<input type="text" placeholder="Name">
-						<input type="text" placeholder="Email">
+						<input type="text" placeholder="Name" pattern="[a-zA-Z0-9]+" required="">
+						<input type="email" placeholder="Email" pattern="[a-zA-Z0-9]+" required="">
 					</div>
 						<textarea name="" id="" cols="30" rows="10" placeholder="Message"></textarea>
 						<input type="submit" value="Send">

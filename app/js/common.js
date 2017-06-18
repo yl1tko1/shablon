@@ -5,6 +5,16 @@ $(".btn_mnu").click(function() {
 $(this).toggleClass("active");
 });
 
+var $menu = $("nav");
+
+$(window).scroll(function(){
+    if ( $(this).scrollTop() > 0){
+       $menu.addClass("fixed");
+   } else if($(this).scrollTop() <= 0) {
+    $menu.removeClass("fixed");
+}
+        });//scroll
+
 $('.ord-btn').mouseenter(function(){
     $(this).parent('.wrap-pk').find($('.ord-btn')).css({'background':'#49cbcd', 'transition':'.5s'});
     $(this).parent('.wrap-pk').find($('.title-pk')).css({'background':'#49cbcd', 'transition':'.5s'});
