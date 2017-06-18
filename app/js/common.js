@@ -5,15 +5,13 @@ $(".btn_mnu").click(function() {
 $(this).toggleClass("active");
 });
 
-
 $('.ord-btn').mouseenter(function(){
-	$(this).parent('.wrap-pk').find($('.ord-btn')).css({'background':'#49cbcd', "transition":".5s"});
-	$(this).parent('.wrap-pk').find($('.title-pk')).css({'background':'#49cbcd', "transition":".5s"});
+    $(this).parent('.wrap-pk').find($('.ord-btn')).css({'background':'#49cbcd', 'transition':'.5s'});
+    $(this).parent('.wrap-pk').find($('.title-pk')).css({'background':'#49cbcd', 'transition':'.5s'});
 }).mouseleave(function(){
-        $(this).css('background','#788492');
-        $('.title-pk').css('background', '#485460');
-    });;
-
+    $(this).parent('.wrap-pk').find($('.ord-btn')).css('background', '#788492');
+    $(this).parent('.wrap-pk').find($('.title-pk')).css('background', '#485460');
+});
 });
 
 var slideNow = 1;

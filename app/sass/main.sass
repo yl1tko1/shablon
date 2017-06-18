@@ -166,8 +166,6 @@ nav
  display: block
  margin: 30px auto
  border-radius: 5px
-
-
  span
  	display: table
  	margin: 0 auto
@@ -176,13 +174,80 @@ nav
  	font-size: 17px
 	font-family: "OpenSansSemiBold"
 
+
 .contacts
 	background: url(../img/contact.jpg) center no-repeat
 	min-height: 685px
+	display: inline-block
+	width: 100% 
 	h2
 		margin: 100px 0
 		text-align: center
 		font-size: 42px
+		color: #fff
+		font-family: "OpenSansRegular"
+	.contacts-area
+		width: 50%
+		float: left
+		color: #FFF
+		.title-contact
+			font-size: 24px
+			margin: 0
+		.item-desc
+			font-size: 14px
+			opacity: 0.5
+			margin: 5px 0
+		.social
+			display: inline-block
+			margin: 40px 0 20px 0
+			.social-icon
+				width: 42px
+				height: 42px
+				float: left
+				margin-right: 15px
+		.item-contact
+			font-size: 14px
+			margin: 5px 0
+			color: #bface2
+
+	.form-area
+		width: 50%
+		float: left
+		font-family: "OpenSansRegular"
+		.form-contact
+			display: inline-block
+			width: 100%
+			input[type="text"]
+				width: 230px
+				float: left
+				margin: 10px 10px
+				padding: 15px
+				border-radius: 5px
+				border: 0
+				font-size: 16px
+		textarea
+			width: 510px
+			margin: 10px 10px
+			padding: 15px
+			border-radius: 5px
+			border: 0
+			font-size: 16px
+		input[type="submit"]
+			font-size: 22px
+			background: #49cbcd
+			float: right
+			width: 170px
+			color: #FFF
+			border-radius: 5px
+			border: 0
+			padding: 15px 0
+			margin: 10px 35px
+			cursor: pointer
+			transition: .5s
+			&:hover
+				opacity: 0.8	
+
+
 
 
 
